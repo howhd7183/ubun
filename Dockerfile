@@ -22,7 +22,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     echo $TZ > /etc/timezone; \
     \
     # Download Playit agent
-    curl -L https://github.com/playit-cloud/playit-agent/releases/download/v0.15.15/playit-linux_amd64 -o /usr/local/bin/playit-agent && \
+    curl -L https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64 -o /usr/local/bin/playit-agent && \
     chmod +x /usr/local/bin/playit-agent
 
 EXPOSE 22
